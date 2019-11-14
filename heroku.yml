@@ -1,0 +1,15 @@
+#setup:
+#  addons:
+#    - plan: heroku-postgresql:hobby-dev
+#  config:
+#    METHOD: heroku.yml with setup section (beta)
+#
+build:
+  docker:
+    web: Dockerfile
+
+##
+## If `run` section is not exist, `CMD` in Dockerfile is used instead of it.
+##
+#run:
+#  web: ruby server.rb
