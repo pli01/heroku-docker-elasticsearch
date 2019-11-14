@@ -6,7 +6,7 @@
 #
 build:
   docker:
-    web: Dockerfile
+    elastic: Dockerfile
 
 ##
 ## If `run` section is not exist, `CMD` in Dockerfile is used instead of it.
